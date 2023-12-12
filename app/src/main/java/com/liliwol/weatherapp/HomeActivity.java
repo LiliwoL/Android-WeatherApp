@@ -1,8 +1,8 @@
-package com.aniketjain.weatherapp;
+package com.liliwol.weatherapp;
 
-import static com.aniketjain.weatherapp.location.CityFinder.getCityNameUsingNetwork;
-import static com.aniketjain.weatherapp.location.CityFinder.setLongitudeLatitude;
-import static com.aniketjain.weatherapp.network.InternetConnectivity.isInternetConnected;
+import static com.liliwol.weatherapp.location.CityFinder.getCityNameUsingNetwork;
+import static com.liliwol.weatherapp.location.CityFinder.setLongitudeLatitude;
+import static com.liliwol.weatherapp.network.InternetConnectivity.isInternetConnected;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -28,12 +28,13 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.aniketjain.weatherapp.adapter.DaysAdapter;
-import com.aniketjain.weatherapp.databinding.ActivityHomeBinding;
-import com.aniketjain.weatherapp.location.LocationCord;
-import com.aniketjain.weatherapp.toast.Toaster;
-import com.aniketjain.weatherapp.update.UpdateUI;
-import com.aniketjain.weatherapp.url.URL;
+import com.liliwol.weatherapp.R;
+import com.liliwol.weatherapp.adapter.DaysAdapter;
+import com.liliwol.weatherapp.databinding.ActivityHomeBinding;
+import com.liliwol.weatherapp.location.LocationCord;
+import com.liliwol.weatherapp.toast.Toaster;
+import com.liliwol.weatherapp.update.UpdateUI;
+import com.liliwol.weatherapp.url.URL;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.play.core.appupdate.AppUpdateInfo;

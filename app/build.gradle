@@ -3,10 +3,10 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.aniketjain.weatherapp"
+        applicationId 'com.liliwol.weatherapp'
         minSdk 19
         targetSdk 33
         versionCode 5
@@ -27,11 +27,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildToolsVersion '34.0.0'
+    namespace 'com.liliwol.weatherapp'
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -52,7 +54,7 @@ dependencies {
     //For Responsive screen size
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     //Lotti files
-    implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.airbnb.android:lottie:6.2.0'
     // Multi Dex Enable
     implementation 'androidx.multidex:multidex:2.0.1'
 }
